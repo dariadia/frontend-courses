@@ -1,8 +1,11 @@
 import { useTranslation } from "react-i18next"
 import { Helmet } from "react-helmet"
+import { useState } from "react"
 
 function App() {
   const { t, i18n } = useTranslation()
+  const [course, setCourse] = useState('React')
+
   const changeLanguage = () =>
     i18n.changeLanguage(i18n.resolvedLanguage === 'en' ? 'ru' : 'en')
   return (
@@ -18,7 +21,9 @@ function App() {
       <header>
         <button onClick={changeLanguage}>{i18n.resolvedLanguage}</button>
       </header>
-      <main></main>
+      <main>
+        {course === 'React' ? <ReactCourse /> : <JsCourse />}
+      </main>
       <footer>
         <a href="https://github.com/dariadia/">Github @dariadia</a>
         <a href="https://t.me/redheadalert">Telegram</a>
@@ -27,5 +32,14 @@ function App() {
     </>
   )
 }
+
+const ReactCourse = () => {
+  return (<div>React</div>)
+}
+
+const JsCourse = () => {
+  return (<div>Js</div>)
+}
+
 
 export default App
