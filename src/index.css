@@ -2,7 +2,7 @@
   --main: white;
   --complementary: #ACB1D6;
   --accent: #566eaf;
-  --highlight: #566eaf;
+  --highlight: #4b5f97;
   --text: #030303;
   --accentTint: rgba(130, 148, 196, 0.9);
   --accentDark: rgba(130, 148, 196, 0.6);
@@ -64,4 +64,28 @@ a:hover {
 
 footer > a {
   margin-right: 32px;
+}
+
+section {
+  padding: 12px 48px 0;
+}
+
+section > h2 {
+  color: var(--accent);
+  font: 48px/54px bold;
+  font-weight: 800;
+}
+
+section > p {
+  max-width: 700px;
+  display: block;
+  font: 22px/36px normal;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+section > h3 {
+  color: var(--highlight);
+  font: 36px/48px bold;
+  font-weight: 800;
+  text-decoration: underline;
 }

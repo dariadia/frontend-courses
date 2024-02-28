@@ -22,11 +22,15 @@ function App() {
         <button onClick={changeLanguage}>{i18n.resolvedLanguage}</button>
       </header>
       <main>
+        <section>
+          <h2>{t('what_you_get')}</h2>
+          <p>{t('personalised')}</p>
+        </section>
         {course === 'React' ? <ReactCourse /> : <JsCourse />}
       </main>
       <footer>
-        <a href="https://github.com/dariadia/">Github @dariadia</a>
-        <a href="https://t.me/redheadalert">Telegram</a>
+        <a target="_blank" href="https://github.com/dariadia/" rel="noreferrer">Github @dariadia</a>
+        <a target="_blank" href="https://t.me/redheadalert" rel="noreferrer">Telegram</a>
         <a target="_blank" href={i18n.resolvedLanguage === 'en' ? "https://dariadia-portfolio.vercel.app/":"https://dariadia-portfolio-ru.vercel.app/"} rel="noreferrer">{t('portfolio')}</a>
       </footer>
     </>
@@ -34,11 +38,11 @@ function App() {
 }
 
 const ReactCourse = () => {
-  return (<div>React</div>)
+  return (<section><h3>React</h3></section>)
 }
 
 const JsCourse = () => {
-  return (<div>Js</div>)
+  return (<section><h3>JavaScript</h3></section>)
 }
 
 
