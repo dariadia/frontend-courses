@@ -31,7 +31,7 @@ function App() {
       <footer>
         <a target="_blank" href="https://github.com/dariadia/" rel="noreferrer">Github @dariadia</a>
         <a target="_blank" href="https://t.me/redheadalert" rel="noreferrer">Telegram</a>
-        <a target="_blank" href={i18n.resolvedLanguage === 'en' ? "https://dariadia-portfolio.vercel.app/":"https://dariadia-portfolio-ru.vercel.app/"} rel="noreferrer">{t('portfolio')}</a>
+        <a target="_blank" href={i18n.resolvedLanguage === 'en' ? "https://dariadia-portfolio.vercel.app/" : "https://dariadia-portfolio-ru.vercel.app/"} rel="noreferrer">{t('portfolio')}</a>
       </footer>
     </>
   )
@@ -40,22 +40,22 @@ function App() {
 const ReactCourse = () => {
   const { t } = useTranslation()
   return (<section className="course-section"><h3>React</h3>
-  <h4>{t('react_base')}</h4>
-  <ol>{[1,2,3,4].map(item => <li key={item}>
-    <details>
-  <summary>{t(`react_base_${item}`)}</summary>
-  <div>{t(`react_base_${item}_details`)}</div>
-</details>
+    <h4>{t('react_base')}</h4>
+    <ol>{[1, 2, 3, 4].map(item => <li key={item}>
+      <details>
+        <summary>{t(`react_base_${item}`)}</summary>
+        <div>{t(`react_base_${item}_details`)}</div>
+      </details>
 
-</li>)}</ol>
+    </li>)}</ol>
 
-<h4>{t('react_adv')}</h4>
-<ol>{[1,2,3,4].map(item => <li key={item}>
-    <details>
-  <summary>{t(`react_adv_${item}`)}</summary>
-  <div>{t(`react_adv_${item}_details`)}</div>
-</details>
-</li>)}</ol></section>)
+    <h4>{t('react_adv')}</h4>
+    <ol>{[1, 2, 3, 4, 5, 6, 7, 8, 9].map(item => <li key={item}>
+      <details>
+        <summary>{t(`react_adv_${item}`)}</summary>
+        <div>{t(`react_adv_${item}_details`)}</div>
+      </details>
+    </li>)}</ol></section>)
 }
 
 const JsCourse = () => {
