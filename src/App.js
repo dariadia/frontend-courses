@@ -41,7 +41,7 @@ const ReactCourse = () => {
   const { t } = useTranslation()
   return (<section className="course-section"><h3>React</h3>
     <h4>{t('react_base')}</h4>
-    <ol>{[1, 2, 3, 4, 5, 6,7,8,9].map(item => <li key={item}>
+    <ol>{[1, 2, 3, 4, 5, 6, 7, 8, 9].map(item => <li key={item}>
       <details>
         <summary>{t(`react_base_${item}`)}</summary>
         <div>{t(`react_base_${item}_details`)}</div>
@@ -50,12 +50,15 @@ const ReactCourse = () => {
     </li>)}</ol>
 
     <h4>{t('react_adv')}</h4>
-    <ol>{[1, 2, 3, 4, 5, 6, 7, 8, 9].map(item => <li key={item}>
+    WIP
+    {/* <ol>{[1, 2, 3, 4, 5, 6, 7, 8, 9].map(item => <li key={item}>
       <details>
         <summary>{t(`react_adv_${item}`)}</summary>
         <div>{t(`react_adv_${item}_details`)}</div>
       </details>
-    </li>)}</ol></section>)
+    </li>)}
+    </ol> */}
+  </section>)
 }
 
 const JsCourse = () => {
