@@ -1,3 +1,14 @@
+:root {
+  --main: white;
+  --complementary: #ACB1D6;
+  --accent: #566eaf;
+  --highlight: #566eaf;
+  --text: #030303;
+  --accentTint: rgba(130, 148, 196, 0.9);
+  --accentDark: rgba(130, 148, 196, 0.6);
+  --shadowMain: rgba(130, 148, 196, 0.4);
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +21,28 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+header > button {
+  color: var(--accent);
+  background-color: transparent;
+  border: 1px solid var(--accent);
+  padding: 0.75rem 1rem;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  transition: var(--transition);
+  margin-left: 15px;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+main {
+  min-height: calc(100vh - 64px);
+}
+
+footer {
+  line-height: 48px;
+  background-color: var(--complementary);
+  padding: 0 48px;
 }
