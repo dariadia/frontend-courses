@@ -18,6 +18,7 @@ i18n
   .use(initReactI18next)
   .init({
     resources,
+    lng: "ru",
     interpolation: {
       escapeValue: false
     }
