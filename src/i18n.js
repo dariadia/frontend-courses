@@ -4,12 +4,14 @@ import { initReactI18next } from "react-i18next";
 const resources = {
   en: {
     translation: {
-      "Welcome to React": "Welcome to React and react-i18next"
+      "meta_title": "I want to be a frontend developer!",
+      portfolio: "Tutor's portfolio",
     }
   },
   ru: {
     translation: {
-      "Welcome to React": "Добро пожаловать react-i18next"
+      "meta_title": "Хочу стать фронтенд-разработчиком!",
+      portfolio: 'Портфолио преподавателя'
     }
   }
 };
