@@ -89,3 +89,31 @@ section > h3 {
   font-weight: 800;
   text-decoration: underline;
 }
+
+section > h4 {
+  color: var(--highlight);
+  font: 24px/32px bold;
+  font-weight: 800;
+}
+
+.course-section {
+  margin: 36px 0;
+}
+
+details:hover {
+  cursor: pointer;
+  color: var(--accent);
+  transition: 0.2s all;
+}
+
+details {
+  margin: 0 0 24px 12px;
+}
+
+summary {
+  padding: 0 0 24px;
+}
+
+details[open] > div {
+  color: black;
+}

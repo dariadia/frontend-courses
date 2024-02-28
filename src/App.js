@@ -13,7 +13,7 @@ function App() {
       <Helmet>
         <meta
           name="description"
-          content=""
+          content={t('meta_description')}
         />
         <title>{t('meta_title')}</title>
         <link rel="canonical" href="todo" />
@@ -38,7 +38,24 @@ function App() {
 }
 
 const ReactCourse = () => {
-  return (<section><h3>React</h3></section>)
+  const { t } = useTranslation()
+  return (<section className="course-section"><h3>React</h3>
+  <h4>{t('react_base')}</h4>
+  <ol>{[1,2,3,4].map(item => <li key={item}>
+    <details>
+  <summary>{t(`react_base_${item}`)}</summary>
+  <div>{t(`react_base_${item}_details`)}</div>
+</details>
+
+</li>)}</ol>
+
+<h4>{t('react_adv')}</h4>
+<ol>{[1,2,3,4].map(item => <li key={item}>
+    <details>
+  <summary>{t(`react_adv_${item}`)}</summary>
+  <div>{t(`react_adv_${item}_details`)}</div>
+</details>
+</li>)}</ol></section>)
 }
 
 const JsCourse = () => {
