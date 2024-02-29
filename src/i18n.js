@@ -6,6 +6,7 @@ const resources = {
     translation: {
       meta_title: "I want to be a frontend developer!",
       portfolio: "Tutor's portfolio",
+      what_you_get: "What you get",
       meta_description: "Daria's React.js & JavaScript learning courses.",
       personalised: "Personalised mentouring course. Below you can check out the general outline of the course program. I adjust the plan individually depending on the goals and level of each student.",
        react_base: "For beginners",
