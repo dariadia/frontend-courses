@@ -44,7 +44,7 @@ const ReactCourse = ({ setCourse }) => {
       <h3>React</h3>
       <h3 onClick={() => setCourse('JavaScript')} className="disabled-tab">JavaScript</h3>
     </div>
-    <h4>{t('react_base')}</h4>
+    <h4>{t('base')}</h4>
     <ol>{[1, 2, 3, 4, 5, 6, 7, 8, 9].map(item => <li key={item}>
       <details>
         <summary>{t(`react_base_${item}`)}</summary>
@@ -53,7 +53,7 @@ const ReactCourse = ({ setCourse }) => {
     </li>)}
     </ol>
 
-    <h4>{t('react_adv')}</h4>
+    <h4>{t('adv')}</h4>
     WIP
     {/* <ol>{[1, 2, 3, 4, 5, 6, 7, 8, 9].map(item => <li key={item}>
       <details>
@@ -66,11 +66,19 @@ const ReactCourse = ({ setCourse }) => {
 }
 
 const JsCourse = ({ setCourse }) => {
+  const { t } = useTranslation()
   return (<section>
     <div className="flex-box">
       <h3>JavaScript</h3>
       <h3 onClick={() => setCourse('React')} className="disabled-tab">React.js</h3>
     </div>
+    <ol>{[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map(item => <li key={item}>
+      <details>
+        <summary>{t(`js_${item}`)}</summary>
+        <div>{t(`js_${item}_details`)}</div>
+      </details>
+    </li>)}
+    </ol>
   </section>
   )
 }
