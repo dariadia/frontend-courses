@@ -83,14 +83,14 @@ section > p {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-section > h3 {
+section h3 {
   color: var(--highlight);
   font: 36px/48px bold;
   font-weight: 800;
   text-decoration: underline;
 }
 
-section > h4 {
+section h4 {
   color: var(--highlight);
   font: 24px/32px bold;
   font-weight: 800;
@@ -116,4 +116,16 @@ summary {
 
 details[open] > div {
   color: black;
+}
+
+.disabled-tab {
+  display: inline-block;
+  color: grey;
+  text-decoration: none;
+  margin-left: 32px;
+  cursor: pointer;
+}
+
+.flex-box {
+  display: flex;
 }
